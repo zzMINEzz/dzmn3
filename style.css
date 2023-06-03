@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(to right top, #0c0c0c, #6c007a, #5e5e5e );
+    background-repeat: no-repeat;
+    background-size: 1600px;
+    height: 1600px;
+}
+.card{
+    
+    max-width: 350px;
+    height: 370px;
+    align-items: center;
+    border-radius: 15px;
+    background:linear-gradient(to right top, #0c0c0c,#6c007a ,#3d0042 );
+    color: #fff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    transition: 2s ;
+    box-shadow: 10px 5px 5px rgb(32, 32, 32);
+}
+.card_2{
+    
+    max-width: 350px;
+    height: 370px;
+    align-items: center;
+    border-radius: 15px;
+    background:linear-gradient(to right top, #0c0c0c,#474747 ,#fdfcfda1 );
+    color: #fff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    transition: 2s ;
+    box-shadow: 10px 5px 5px rgb(128, 128, 128);
+}
+.card_3{
+    
+    max-width: 350px;
+    height: 370px;
+    align-items: center;
+    border-radius: 15px;
+    background:linear-gradient(to right top, #000000,#004617 ,#25b800a1 );
+    color: #fff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    transition: 2s ;
+    box-shadow: 10px 5px 5px rgb(4, 121, 0);
+    position: relative;
+}
+.img{
+    margin: 30px 30px;
+}
+.cards{
+    display: flex;
+    margin: 30px 30px;
+    margin-top: 100px;
+}
+.button{
+    border-radius: 15px;
+    max-width: 100px;
+    background:linear-gradient(to left bottom, #fdfcfda1,#474747 ,#fdfcfda1 );
+    color:rgb(49, 49, 49);
+    margin: 0 auto;
+    transition: 0.8s;
+    animation: button 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+}
+.button_2{
+    border-radius: 15px;
+    max-width: 100px;
+    background:linear-gradient(to left bottom, #0c0c0c,#6c007a ,#3d0042 );
+    color: #ffffffa8;
+    margin: 0 auto;
+    transition: 0.8s;
+    animation: button 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+}
+.button_3{
+    border-radius: 15px;
+    max-width: 100px;
+    margin: 0 auto;
+    transition: 0.8s;
+    background:linear-gradient(to left bottom, #000000,#004617 ,#25b800a1  );
+    color: #5a5a5a;
+    animation: button 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+}
+@keyframes button {
+    70%{
+        transform: scale(70%);
+    }
+    100%{
+        transform: translate(120);
+}
+}
+.card:hover{
+    transform: scale(120%);
+}
+.input_label3{
+    display: none;
+}
+.input_label2{
+    display: none;
+}
+.input_label1{
+    display: none;
+}
+.card_2:hover{
+    transform:scale(120%);
+}
+.card_3:hover{
+    transform: scale(120%);
+}
+                /* labels text of signs */
+.input_label3[type="checkbox"]:checked ~ .label3 .button_3 {
+    background-color: #fff;
+    color: #004617;
+    opacity: 0;
+
+}
+.input_label2[type="checkbox"]:checked ~ .label2 .button {
+    background-color: #fff;
+    color: #004617;
+    opacity: 0;
+
+}
+.input_label1[type="checkbox"]:checked ~ .label1 .button_2 {
+    background-color: #fff;
+    color: #004617;
+    opacity: 0;
+
+}
+
+.label {
+}
+.text-of-sings3{
+    width: 300px;
+    height: 1000px;
+    background:linear-gradient( to  left bottom, #000000,#004617b6 ,#25b800c9  );
+    color: #ffffffa8;
+    position: absolute;
+    top: 350px;
+    z-index: -3;
+    transition: 3s;
+    opacity: 0;
+    border-radius: 15px;
+    
+}
+.text-of-sings2{
+    width: 300px;
+    height: 1100px;
+    background:linear-gradient(to right top, #fdfcfda1,#474747 ,#fdfcfda1 );
+    color: #ffffffa8;
+    position: absolute;
+    top: 350px;
+    z-index: -3;
+    transition: 3s;
+    opacity: 0;
+    border-radius: 15px;
+    
+}
+.text-of-sings1{
+    width: 300px;
+    height: 1300px;
+    background: linear-gradient(to right top, #0000007e,#6c007a81 ,#9600a3a1);
+    color: #ffffffa8;
+    position: absolute;
+    top: 350px;
+    z-index: -3;
+    transition: 3s;
+    opacity: 0;
+    border-radius: 15px;
+    
+}
+
+.input_label3[type="checkbox"]:checked ~ .text-of-sings3{
+    opacity: 1;
+    
+}
+.input_label2[type="checkbox"]:checked ~ .text-of-sings2{
+    opacity: 1;
+    
+}
+.input_label1[type="checkbox"]:checked ~ .text-of-sings1{
+    opacity: 1;
+    
+}
+.freerio{
+    color: #9600a3;
+}
+.zho{
+    color: #736f8a;
+}
+.soda{
+    color: #527a5f;
+}
